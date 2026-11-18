@@ -3,6 +3,13 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import gdown
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_PATH = BASE_DIR / "model.pkl"
+
+FILE_ID = "1rYZbbbC9SC7IUQY2rOLCbAy76rxPKjzK"
 
 st.set_page_config(
     page_title="Diabetes Prediction",
